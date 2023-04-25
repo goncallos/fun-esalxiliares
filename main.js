@@ -1,5 +1,10 @@
+const {gets, print} = require('./funcoes-auxiliares');
 
+const numeroSorteados = [];
 
-const funcoes = require('./funcoes-auxiliares');
+for (let i = 0; i < 5; i++) {
+    const numeroSorteado = gets();
+    numeroSorteados.push(numeroSorteado);
+}
 
-console.log(funcoes.gets());
+print(numeroSorteados);
